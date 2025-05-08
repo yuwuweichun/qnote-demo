@@ -1,4 +1,5 @@
 const routes = [
+  // 主布局路由
   {
     path: '/',
     component: () => import('layouts/MainLayout.vue'),
@@ -7,8 +8,24 @@ const routes = [
     ]
   },
 
-  // Always leave this as last one,
-  // but you can also remove it
+  // 简洁布局路由
+  {
+    path: '/',
+    component: () => import('layouts/SimpleLayout.vue'),
+    children: [
+      {
+        path: 'add',
+        component: () => import('pages/AddPage.vue'),
+        meta: { title: '添加备忘录' }
+      },
+      {
+        path: 'edit/:id',
+        component: () => import('pages/EditPage.vue'),
+        meta: { title: '编辑备忘录' }
+      }
+    ]
+  },
+  // 404页面
   {
     path: '/:catchAll(.*)*',
     component: () => import('pages/ErrorNotFound.vue')

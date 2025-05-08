@@ -12,10 +12,9 @@
         />
 
         <q-toolbar-title>
-          Quasar App
+          qnote: A Simple Notepad
         </q-toolbar-title>
 
-        <div>Quasar v{{ $q.version }}</div>
       </q-toolbar>
     </q-header>
 
