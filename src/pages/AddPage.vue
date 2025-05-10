@@ -1,44 +1,14 @@
-<template>
-  <q-page class="q-pa-md">
-    <q-form @submit="addNote">
-      <q-input
-        v-model="newNote.title"
-        label="标题"
-        class="q-mb-md"
-      />
-
-      <q-input
-        v-model="newNote.content"
-        label="内容"
-        type="textarea"
-        class="q-mb-md"
-      />
-
-      <div class="row justify-end">
-        <q-btn
-          label="取消"
-          class="q-mr-sm"
-          @click="router.go(-1)"
-        />
-        <q-btn
-          label="保存"
-          type="submit"
-          color="primary"
-        />
-      </div>
-    </q-form>
-  </q-page>
-</template>
-
 <script setup>
 import { ref } from 'vue'
 import { useRouter } from 'vue-router'
+import { format } from 'date-fns'
 
 const router = useRouter()
 const newNote = ref({
   title: '',
   content: '',
-  color: generatePastelColor() // 添加随机颜色
+  color: generatePastelColor(), // 添加随机颜色
+  updatedAt: new Date().toISOString() // 新增时间戳字段
 })
 
 
@@ -58,10 +28,13 @@ function generatePastelColor() {
 }
 
 const addNote = () => {
-  // 获取现有备忘录
+  // 更新时间戳
+  newNote.value.updatedAt = new Date().toISOString()
+
+  // 获取现有记事本
   const notes = JSON.parse(localStorage.getItem('q-notes') || '[]')
 
-  // 添加新备忘录
+  // 添加新记事本
   notes.push(newNote.value)
 
   // 保存回localStorage
@@ -71,3 +44,35 @@ const addNote = () => {
   router.push('/')
 }
 </script>
+
+<template>
+  <q-page class="add-page q-pa-md">
+    <q-form @submit="addNote">
+      <q-input
+        v-model="newNote.title"
+        label="标题"
+        class="q-mb-md"
+      />
+
+      <q-input
+        v-model="newNote.content"
+        label="内容"
+        type="textarea"
+      />
+
+      <q-page-sticky position="bottom-right" :offset="[18, 18]">
+        <q-btn
+          round
+          icon="radio_button_checked"
+          color="primary"
+          size="lg"
+          type="submit"
+        />
+      </q-page-sticky>
+    </q-form>
+  </q-page>
+</template>
+
+<style scoped>
+
+</style>

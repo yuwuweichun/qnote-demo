@@ -2,7 +2,7 @@
   <q-layout view="hHh Lpr lFf">
     <q-header elevated class="bg-primary text-white">
       <q-toolbar>
-        <q-btn flat round dense icon="close" @click="$router.go(-1)" />
+        <q-btn flat round dense icon="arrow_back" @click="$router.go(-1)" />
         <q-toolbar-title>{{ title }}</q-toolbar-title>
         <q-space />
         <slot name="header-right" />
