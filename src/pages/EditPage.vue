@@ -48,13 +48,14 @@ const updateNote = () => {
       <q-input
         v-model="note.title"
         label="标题"
-        class="q-mb-md"
+        class="q-mb-md text-h6"
       />
 
       <q-input
         v-model="note.content"
         label="内容"
         type="textarea"
+        class="text-subtitle1"
       />
 
       <q-page-sticky position="bottom-right" :offset="[18, 18]">

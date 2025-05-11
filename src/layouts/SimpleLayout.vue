@@ -22,3 +22,7 @@ const route = useRoute()
 const title = route.meta.title || '页面标题'
 
 </script>
+
+<style scoped>
+
+</style>

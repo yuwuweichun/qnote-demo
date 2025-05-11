@@ -52,7 +52,7 @@ const showDeleteDialog = (index) => {
   noteToDelete.value = index
   $q.dialog({
     title: '确认删除',
-    message: '确定要删除这个记事本吗？',
+    message: '确定要删除这个记事本吗(੭ ᐕ)੭？',
     cancel: true,
     persistent: true,
     ok: {

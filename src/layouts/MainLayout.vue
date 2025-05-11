@@ -12,7 +12,7 @@
         />
 
         <q-toolbar-title>
-          qnote: A Simple Notepad
+          qnote(`･∀･)b
         </q-toolbar-title>
 
       </q-toolbar>
@@ -61,6 +61,12 @@ const linksList = [
     icon: 'live_tv',
     link: 'https://github.com/quasarframework'
   },
+  {
+    title: 'CSDN',
+    caption: '',
+    icon: 'article',
+    link: 'https://github.com/quasarframework'
+  }
 
 ]
 

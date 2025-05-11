@@ -22,7 +22,9 @@ function generatePastelColor() {
     '#D4A5A5', // 浅紫色
     '#FF8B94', // 粉红色
     '#B5EAD7', // 薄荷绿
-    '#C7CEEA'  // 淡紫色
+    '#C7CEEA', // 淡紫色
+    '#20A6E2', // 淡蓝色
+    '#61FFFF', // 浅青色
   ]
   return colors[Math.floor(Math.random() * colors.length)]
 }
@@ -51,13 +53,14 @@ const addNote = () => {
       <q-input
         v-model="newNote.title"
         label="标题"
-        class="q-mb-md"
+        class="q-mb-md text-h6"
       />
 
       <q-input
         v-model="newNote.content"
         label="内容"
         type="textarea"
+        class="text-subtitle1"
       />
 
       <q-page-sticky position="bottom-right" :offset="[18, 18]">

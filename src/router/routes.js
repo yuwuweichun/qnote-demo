@@ -16,12 +16,12 @@ const routes = [
       {
         path: 'add',
         component: () => import('pages/AddPage.vue'),
-        meta: { title: '添加备忘录' }
+        meta: { title: '添加 (ゝ∀･)' }
       },
       {
         path: 'edit/:id',
         component: () => import('pages/EditPage.vue'),
-        meta: { title: '编辑备忘录' }
+        meta: { title: '编辑 •_ゝ•' }
       }
     ]
   },
