@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">qnote</string>
+    <string name="title_activity_main">qnote</string>
+    <string name="package_name">com.songchun.qnote</string>
+    <string name="custom_url_scheme">com.songchun.qnote</string>
+</resources>
