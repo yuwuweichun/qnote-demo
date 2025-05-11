@@ -11,7 +11,7 @@
     "dev": "quasar dev",
     "build": "quasar build",
     "postinstall": "quasar prepare",
-    "icons": "icongenie generate -i qnote.png --skip-trim --theme-color 0FADF1"
+    "icons": "icongenie generate -i qnote.png --theme-color 0FADF1"
   },
   "dependencies": {
     "@quasar/extras": "^1.16.4",
