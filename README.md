@@ -3,9 +3,9 @@
 A simple notebook developed with quasar
 
 ## Preview
-<img src="./src/assets/images/1.png" width="200" />
-<img src="./src/assets/images/2.png" width="200" />
-<img src="./src/assets/images/3.png" width="200" />
+<img src="./src/assets/images/1.png" width="470" />
+<img src="./src/assets/images/2.png" width="470" />
+<img src="./src/assets/images/3.png" width="470" />
 
 ## Install the dependencies
 ```bash
