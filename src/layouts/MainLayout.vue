@@ -53,19 +53,13 @@ const linksList = [
     title: 'Github',
     caption: '',
     icon: 'code',
-    link: 'https://github.com/quasarframework'
-  },
-  {
-    title: 'bilibili',
-    caption: '',
-    icon: 'live_tv',
-    link: 'https://github.com/quasarframework'
+    link: 'https://github.com/yuwuweichun/qnote-demo'
   },
   {
     title: 'CSDN',
     caption: '',
     icon: 'article',
-    link: 'https://github.com/quasarframework'
+    link: ''
   }
 
 ]
