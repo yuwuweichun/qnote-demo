@@ -10,7 +10,8 @@
     "test": "echo \"No test specified\" && exit 0",
     "dev": "quasar dev",
     "build": "quasar build",
-    "postinstall": "quasar prepare"
+    "postinstall": "quasar prepare",
+    "icons": "icongenie generate -i qnote.png --skip-trim"
   },
   "dependencies": {
     "@quasar/extras": "^1.16.4",

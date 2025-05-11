@@ -55,13 +55,6 @@ const linksList = [
     icon: 'code',
     link: 'https://github.com/yuwuweichun/qnote-demo'
   },
-  {
-    title: 'CSDN',
-    caption: '',
-    icon: 'article',
-    link: ''
-  }
-
 ]
 
 const leftDrawerOpen = ref(false)
